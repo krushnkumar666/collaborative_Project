@@ -5,5 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <h1>Can You please switch on the Light</h1>
+    <button onclick="lightOn()">Light On</button>
+    <img src="lightOff.jpeg" alt="" id="offlight">
+    <button onclick="lightoff()">Light Off</button>
+
+    <script>
+        function lightOn(){
+            let onlight = document.getElementById('offlight').src = 'lightOn.jpeg';
+        }
+        function lightoff(){
+            let offlight = document.getElementById('offlight').src = 'lightOff.jpeg';
+        }
+    </script>
+  </body>
 </html>
