@@ -1,0 +1,77 @@
+form {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-left: 2rem;
+  margin-top: 2rem;
+  padding: 20px;
+  background: rgb(223, 221, 221);
+  border: 1px solid gray;
+}
+.main {
+  display: flex;
+}
+.data-entered {
+  width: 60%;
+  margin-left: 25rem;
+}
+table {
+  width: 100%;
+  margin: 40px auto;
+  margin-left: 5rem;
+  background: rgb(223, 221, 221);
+}
+table.list {
+  text-align: center;
+  width: 80%;
+}
+td {
+  border: 1px solid gray;
+  text-align: left;
+  padding: 8px 15px;
+}
+tr:nth-child(even),
+table.list thead tr {
+  background: rgb(230, 40, 40);
+}
+input[type="text"],
+input[type="number"] {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid rgb(223, 221, 221);
+  border-radius: 4px;
+}
+input[type="submit"],
+input[type="reset"] {
+  padding: 12px 22px 12px 20px;
+  margin: 15px 5px 10px;
+  display: inline-block;
+  border: none;
+  border: 1px solid rgb(223, 221, 221);
+  border-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+  cursor: pointer;
+}
+input[type="submit"]:hover{
+    background: rgb(129, 129, 231);
+}
+input[type="reset"]:hover{
+    background: rgb(228, 128, 128);
+}
+button{
+    background: #fff;
+    padding: 12px 22px 12px 20px;
+    margin: 15px 5px 10px;
+    display: inline-block;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+}
+button:hover{
+    background: rgb(147, 147, 236);
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="form-function">
+        <form autocomplete="off" onsubmit="onFormSubmit(event)">
+          <div>
+            <label for="productCode">Product Code</label>
+            <input type="text" name="productCode" id="productCode" />
+          </div>
+          <div>
+            <label for="product">Product Name</label>
+            <input type="text" name="product" id="product" />
+          </div>
+          <div>
+            <label for="qty">QTY</label>
+            <input type="number" name="qty" id="qty" />
+          </div>
+          <div>
+            <label for="perPrice">Product Price</label>
+            <input type="number" name="perPrice" id="perPrice" />
+          </div>
+          <div class="form_action--button">
+            <input type="submit" value="Submit" />
+            <input type="reset" value="Reset" />
+          </div>
+        </form>
+      </div>
+      <div class="data-entered">
+        <td>
+          <table class="list" id="storelist">
+            <thead>
+              <tr>
+                <th>Product Code</th>
+                <th>Product Name</th>
+                <th>Quantity</th>
+                <th>Price Per Item</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </td>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
